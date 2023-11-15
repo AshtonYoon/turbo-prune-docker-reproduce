@@ -1,0 +1,11 @@
+version: "1"
+
+services:
+  themoney:
+    container_name: web
+    build:
+      context: .
+      dockerfile: ./apps/web/Dockerfile
+    restart: always
+    ports:
+      - 3000:3000
